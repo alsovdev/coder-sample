@@ -1,0 +1,19 @@
+{
+  "name": "Full Stack Dev Environment",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "workspace",
+  "workspaceFolder": "/home/coder/project",
+  "forwardPorts": [3000, 5173, 5432, 5672, 15672, 8080],
+  "postCreateCommand": "npm install && cd workspace/frontend && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbms.postgresql",
+        "ms-python.python",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
